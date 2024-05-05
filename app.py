@@ -1,5 +1,7 @@
 from flask import Flask,request,jsonify
 from flask_cors import CORS
+import uuid
+from datetime import datetime,timedelta
 
 
 
@@ -678,6 +680,64 @@ def products():
     ]
   }
 ])
+    
+    
+@app.route("/order",methods=['POST'])
+def cart():
+ order =request.json
+ 
+ id = uuid.uuid4()
+ orderTime = datetime.now().isoformat() + "Z"
+ totalCost=order["orderTotal"]
+ 
+ productDetails=[]
+ 
+ for orderinner in order["cart"]["cartItems"]:
+  if orderinner["deliveryOptionId"]=="1":
+    
+    currentdate=datetime.now()
+
+    someDaysAfter=currentdate + timedelta(days=7)
+ 
+    someDaysAfteriso=someDaysAfter.isoformat()
+    productDetails.append({
+      "productid":orderinner["productid"],
+      "quantity":orderinner["quantity"],
+      "estimatedDeliveryTime":someDaysAfteriso
+     })
+    
+  if orderinner["deliveryOptionId"]=="2":
+    
+    currentdate=datetime.now()
+    
+    someDaysAfter=currentdate + timedelta(days=3)
+ 
+    someDaysAfteriso=someDaysAfter.isoformat()
+    productDetails.append({
+      "productid":orderinner["productid"],
+      "quantity":orderinner["quantity"],
+      "estimatedDeliveryTime":someDaysAfteriso
+     })
+  
+  if orderinner["deliveryOptionId"]=="3":
+    
+    currentdate=datetime.now()
+    
+    someDaysAfter=currentdate + timedelta(days=1)
+ 
+    someDaysAfteriso=someDaysAfter.isoformat()
+    productDetails.append({
+      "productid":orderinner["productid"],
+      "quantity":orderinner["quantity"],
+      "estimatedDeliveryTime":someDaysAfteriso
+     })
+
+ return jsonify({
+    "id":id,
+    "orderTime":orderTime,
+    "totalCost":totalCost,
+    "products":productDetails
+  })
 
 
 if __name__ == "__main__":
