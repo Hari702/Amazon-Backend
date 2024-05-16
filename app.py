@@ -56,7 +56,16 @@ def products():
       "mens"
     ],
     "type": "clothing",
-    "sizeChartLink": "images/clothing-size-chart.png"
+    "sizeChartLink": "images/clothing-size-chart.png",
+    "variations":{
+      "color":["Teal","Red","Black"],
+      "size":["M","L","XL"]
+      },
+    "variationsImage": {
+      '{"color":"Teal"}': "images/products/variations/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+      '{"color":"Red"}': "images/products/variations/adults-plain-cotton-tshirt-2-pack-red.jpg",
+      '{"color":"Black"}': "images/products/variations/adults-plain-cotton-tshirt-2-pack-black.jpg"
+    }
   },
   {
     "id": "54e0eccd-8f36-462b-b68a-8182611d9add",
@@ -118,7 +127,15 @@ def products():
       "hoodies",
       "sweaters",
       "apparel"
-    ]
+    ],
+    "variations": {
+      "Color": ["Yellow", "Teal"],
+      "Size": ["S", "M", "L"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Yellow\"}": "images/products/variations/plain-hooded-fleece-sweatshirt-yellow.jpg",
+      "{\"Color\":\"Teal\"}": "images/products/variations/plain-hooded-fleece-sweatshirt-teal.jpg"
+    }
   },
   {
     "id": "77919bbe-0e56-475b-adde-4f24dfed3a04",
@@ -135,7 +152,14 @@ def products():
       "restroom",
       "towels",
       "bath towels"
-    ]
+    ],
+    "variations": {
+      "Set": ["6-Piece", "4-Piece"]
+    },
+    "variationsImage": {
+      "{\"Set\":\"6-Piece\"}": "images/products/variations/luxury-tower-set-6-piece.jpg",
+      "{\"Set\":\"4-Piece\"}": "images/products/variations/luxury-tower-set-4-piece.jpg"
+    }
   },
   {
     "id": "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
@@ -149,7 +173,14 @@ def products():
     "keywords": [
       "bathroom",
       "cleaning"
-    ]
+    ],
+     "variations": {
+      "Style": ["Plain", "Lavender"]
+    },
+    "variationsImage": {
+      "{\"Style\":\"Plain\"}": "images/products/variations/liquid-laundry-detergent-plain.jpg",
+      "{\"Style\":\"Lavender\"}": "images/products/variations/liquid-laundry-detergent-lavender.jpg"
+    }
   },
   {
     "id": "58b4fc92-e98c-42aa-8c55-b6b79996769a",
@@ -164,7 +195,10 @@ def products():
       "shoes",
       "running shoes",
       "footwear"
-    ]
+    ],
+    "variations": {
+      "Shoe size (US)": ["5", "6", "7", "8", "9"]
+    }
   },
   {
     "id": "5968897c-4d27-4872-89f6-5bcb052746d7",
@@ -197,7 +231,14 @@ def products():
     "keywords": [
       "accessories",
       "shades"
-    ]
+    ],
+    "variations": {
+      "Style": ["Black", "Gold"]
+    },
+    "variationsImage": {
+      "{\"Style\":\"Black\"}": "images/products/variations/round-sunglasses-black.jpg",
+      "{\"Style\":\"Gold\"}": "images/products/variations/round-sunglasses-gold.jpg"
+    }
   },
   {
     "id": "04701903-bc79-49c6-bc11-1af7e3651358",
@@ -214,7 +255,10 @@ def products():
       "womens",
       "beach",
       "summer"
-    ]
+    ],
+     "variations": {
+      "Shoe size (US)": ["7", "8", "9"]
+    }
   },
   {
     "id": "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
@@ -244,7 +288,16 @@ def products():
       "shorts",
       "apparel",
       "mens"
-    ]
+    ],
+    "variations": {
+      "Color": ["Gray", "Black", "Beige"],
+      "Waist size (inches)": ["30", "31", "32"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Gray\"}": "images/products/variations/men-slim-fit-summer-shorts-gray.jpg",
+      "{\"Color\":\"Black\"}": "images/products/variations/men-slim-fit-summer-shorts-black.jpg",
+      "{\"Color\":\"Beige\"}": "images/products/variations/men-slim-fit-summer-shorts-beige.jpg"
+    }
   },
   {
     "id": "c2a82c5e-aff4-435f-9975-517cfaba2ece",
@@ -326,7 +379,16 @@ def products():
       "apparel"
     ],
     "type": "clothing",
-    "sizeChartLink": "images/clothing-size-chart.png"
+    "sizeChartLink": "images/clothing-size-chart.png",
+    "variations": {
+      "Color": ["Black", "Gray", "Blue"],
+      "Size": ["XS", "S", "M", "L"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Black\"}": "images/products/variations/women-stretch-popover-hoodie-black.jpg",
+      "{\"Color\":\"Gray\"}": "images/products/variations/women-stretch-popover-hoodie-gray.jpg",
+      "{\"Color\":\"Blue\"}": "images/products/variations/women-stretch-popover-hoodie-blue.jpg"
+    }
   },
   {
     "id": "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",
@@ -357,7 +419,15 @@ def products():
       "flats",
       "womens",
       "footwear"
-    ]
+    ],
+    "variations": {
+      "Color": ["Black", "Gray"],
+      "Shoe size (US)": ["6", "7", "8"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Black\"}": "images/products/variations/women-knit-ballet-flat-black.jpg",
+      "{\"Color\":\"Gray\"}": "images/products/variations/women-knit-ballet-flat-gray.jpg"
+    }
   },
   {
     "id": "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
@@ -375,7 +445,16 @@ def products():
       "mens"
     ],
     "type": "clothing",
-    "sizeChartLink": "images/clothing-size-chart.png"
+    "sizeChartLink": "images/clothing-size-chart.png",
+     "variations": {
+      "Color": ["Blue", "Black", "Red"],
+      "Size": ["S", "M", "L"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Blue\"}": "images/products/variations/men-golf-polo-t-shirt-blue.jpg",
+      "{\"Color\":\"Black\"}": "images/products/variations/men-golf-polo-t-shirt-black.jpg",
+      "{\"Color\":\"Red\"}": "images/products/variations/men-golf-polo-t-shirt-red.jpg"
+    }
   },
   {
     "id": "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
@@ -391,7 +470,14 @@ def products():
       "bins",
       "cans",
       "kitchen"
-    ]
+    ],
+    "variations": {
+      "Size": ["50L", "30L Tall"]
+    },
+    "variationsImage": {
+      "{\"Size\":\"50L\"}": "images/products/variations/trash-can-with-foot-pedal-50-liter.jpg",
+      "{\"Size\":\"30L Tall\"}": "images/products/variations/trash-can-with-foot-pedal-30-liter-tall.jpg"
+    }
   },
   {
     "id": "19c6a64a-5463-4d45-9af8-e41140a4100c",
@@ -408,7 +494,17 @@ def products():
       "sheets",
       "covers",
       "home"
-    ]
+    ],
+    "variations": {
+      "Color": ["Blue", "Red"],
+      "Size": ["Twin", "Queen"]
+    },
+    "variationsImage": {
+      '{"Color":"Blue","Size":"Twin"}': "images/products/variations/duvet-cover-set-blue-twin.jpg",
+      '{"Color":"Blue","Size":"Queen"}': "images/products/variations/duvet-cover-set-blue-queen.jpg",
+      '{"Color":"Red","Size":"Twin"}': "images/products/variations/duvet-cover-set-red-twin.jpg",
+      '{"Color":"Red","Size":"Queen"}': "images/products/variations/duvet-cover-set-red-queen.jpg"
+    }
   },
   {
     "id": "d2785924-743d-49b3-8f03-ec258e640503",
@@ -441,7 +537,16 @@ def products():
       "pants",
       "apparel",
       "mens"
-    ]
+    ],
+     "variations": {
+      "Color": ["Beige", "Green", "Black"],
+      "Size": ["30", "31", "32"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Beige\"}": "images/products/variations/men-chino-pants-beige.jpg",
+      "{\"Color\":\"Green\"}": "images/products/variations/men-chino-pants-green.jpg",
+      "{\"Color\":\"Black\"}": "images/products/variations/men-chino-pants-black.jpg"
+    }
   },
   {
     "id": "1c079479-8586-494f-ab53-219325432536",
@@ -457,7 +562,15 @@ def products():
       "running shoes",
       "footwear",
       "mens"
-    ]
+    ],
+     "variations": {
+      "Color": ["Green", "Black"],
+      "Size": ["9", "10", "11", "12"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Green\"}": "images/products/variations/men-athletic-shoes-green.jpg",
+      "{\"Color\":\"Black\"}": "images/products/variations/men-athletic-shoes-black.jpg"
+    }
   },
   {
     "id": "4df68c27-fd59-4a6a-bbd1-e754ddb6d53c",
@@ -473,7 +586,14 @@ def products():
       "glasses",
       "accessories",
       "shades"
-    ]
+    ],
+    "variations": {
+      "Color": ["Brown", "Silver"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Brown\"}": "images/products/variations/men-navigator-sunglasses-brown.jpg",
+      "{\"Color\":\"Silver\"}": "images/products/variations/men-navigator-sunglasses-silver.jpg"
+    }
   },
   {
     "id": "4e37dd03-3b23-4bc6-9ff8-44e112a92c64",
@@ -520,7 +640,15 @@ def products():
       "jogging",
       "apparel",
       "womens"
-    ]
+    ],
+    "variations": {
+      "Color": ["Camo", "Gray"],
+      "Size": ["S", "M", "L"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Camo\"}": "images/products/variations/women-french-terry-fleece-jogger-camo.jpg",
+      "{\"Color\":\"Gray\"}": "images/products/variations/women-french-terry-fleece-jogger-gray.jpg"
+    }
   },
   {
     "id": "d339adf3-e004-4c20-a120-40e8874c66cb",
@@ -612,7 +740,10 @@ def products():
       "running shoes",
       "footwear",
       "womens"
-    ]
+    ],
+     "variations": {
+      "Size": ["6", "7", "8", "9"]
+    }
   },
   {
     "id": "77a845b1-16ed-4eac-bdf9-5b591882113d",
@@ -677,7 +808,15 @@ def products():
       "hoodies",
       "apparel",
       "mens"
-    ]
+    ],
+     "variations": {
+      "Color": ["Red", "Black"],
+      "Size": ["M", "L", "XL"]
+    },
+    "variationsImage": {
+      "{\"Color\":\"Red\"}": "images/products/variations/men-cozy-fleece-zip-up-hoodie-red.jpg",
+      "{\"Color\":\"Black\"}": "images/products/variations/men-cozy-fleece-zip-up-hoodie-black.jpg"
+    }
   }
 ])
     
@@ -685,9 +824,11 @@ def products():
 @app.route("/order",methods=['POST'])
 def cart():
  order =request.json
+ print(order)
  
  id = uuid.uuid4()
- orderTime = datetime.now().isoformat() + "Z"
+#  orderTime = datetime.now().isoformat() + "Z"
+ orderTime=datetime.now().replace(microsecond=0).isoformat()
  totalCost=order["orderTotal"]
  
  productDetails=[]
@@ -699,11 +840,13 @@ def cart():
 
     someDaysAfter=currentdate + timedelta(days=7)
  
-    someDaysAfteriso=someDaysAfter.isoformat()
+    someDaysAfteriso=someDaysAfter.replace(microsecond=0).isoformat()
     productDetails.append({
+      "id":orderinner["id"],
       "productid":orderinner["productid"],
       "quantity":orderinner["quantity"],
-      "estimatedDeliveryTime":someDaysAfteriso
+      "estimatedDeliveryTime":someDaysAfteriso,
+      "variations":orderinner["variationDetails"]
      })
     
   if orderinner["deliveryOptionId"]=="2":
@@ -714,9 +857,11 @@ def cart():
  
     someDaysAfteriso=someDaysAfter.isoformat()
     productDetails.append({
+      "id":orderinner["id"],
       "productid":orderinner["productid"],
       "quantity":orderinner["quantity"],
-      "estimatedDeliveryTime":someDaysAfteriso
+      "estimatedDeliveryTime":someDaysAfteriso,
+      "variations":orderinner["variationDetails"]
      })
   
   if orderinner["deliveryOptionId"]=="3":
@@ -727,9 +872,11 @@ def cart():
  
     someDaysAfteriso=someDaysAfter.isoformat()
     productDetails.append({
+      "id":orderinner["id"],
       "productid":orderinner["productid"],
       "quantity":orderinner["quantity"],
-      "estimatedDeliveryTime":someDaysAfteriso
+      "estimatedDeliveryTime":someDaysAfteriso,
+      "variations":orderinner["variationDetails"]
      })
 
  return jsonify({
